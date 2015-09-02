@@ -12,7 +12,8 @@ import java.util.Enumeration;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * A context listener for cleaning up at application shutdown
@@ -20,7 +21,7 @@ import org.apache.log4j.Logger;
  * @author Juan Martín Sotuyo Dodero <jmsotuyo@monits.com>
  */
 public class JDBCCleanupContextListener implements ServletContextListener {
-	private static final Logger LOGGER = Logger.getLogger(JDBCCleanupContextListener.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(JDBCCleanupContextListener.class);
 
 	public JDBCCleanupContextListener() {
 	}
