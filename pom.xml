@@ -3,7 +3,7 @@
     <parent>
         <groupId>com.monits</groupId>
         <artifactId>java-pom</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>1.2-SNAPSHOT</version>
     </parent>
 
     <name>jdbc-cleanup-context</name>
@@ -25,6 +25,7 @@
     <properties>
         <slf4j.version>1.7.12</slf4j.version>
         <javax.xml.servlet-api.version>2.5</javax.xml.servlet-api.version>
+        <jdk.version>1.6</jdk.version>
     </properties>
 
     <dependencies>
